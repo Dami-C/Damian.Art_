@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgb(255, 255, 255), rgb(114, 114, 114));
+}
+
+.home__title {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.home__container {
+  display: flex;
+  margin: auto;
+  margin-top: 150px;
+  justify-content: space-around;
+  height: 500px;
+  border-bottom: 2px solid #FF0000;
+  padding: 15px;
+  width: 80%;
+}
+.home__container p {
+  text-align: justify;
+  width: 400px;
+}
+.home__container .home__img1 {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.home__img2 {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .home__container {
+    height: 810px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-item {
+    margin-top: 70px;
+  }
+
+  .home__container .home__img1 {
+    width: 320px;
+    height: 320px;
+  }
+  .home__container .home__img2 {
+    width: 320px;
+    height: 320px;
+  }
+  .home__container p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 320px;
+  }
+}
+.trabajos__title {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.grid__layout {
+  display: grid;
+  width: 100%;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  margin: 50px auto;
+  justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .grid__layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 660px) {
+  .grid__layout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.estudio__title {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.estudio__caja {
+  margin-top: 50px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.estudio__caja .estudio__img {
+  filter: grayscale(100%);
+  border-radius: 50px;
+  width: 700px;
+  height: 500px;
+  object-fit: contain;
+  margin: 50px 20px 20px 50px;
+}
+
+.gifluffy {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.cuidados__main {
+  display: flex;
+  flex-direction: column;
+}
+.cuidados__main .cuidados__title {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.cuidados__subtitle {
+  margin-top: 50px;
+  align-self: center;
+}
+
+.listacuidados__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.listacuidados__container .listacuidados__ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.listacuidados__container .listacuidados__items {
+  display: block;
+  margin: 50px;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+}
+.listacuidados__container img {
+  width: 70px;
+  height: 70px;
+  box-shadow: 2px 2px 7px #000000;
+  border-radius: 22px;
+  margin: 10px;
+}
+.listacuidados__container h3 {
+  color: rgb(175, 13, 13);
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.listacuidados__container p {
+  color: #000000;
+  text-align: justify;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .cuidados__subtitle {
+    width: 308px;
+  }
+
+  .listacuidados__container .listacuidados__items {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 406px) {
+  .cuidados__subtitle {
+    width: 200px;
+  }
+}
+.contacto__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.contacto__container .contacto__title {
+  font-size: 50px;
+}
+.contacto__container img {
+  margin-top: -20px;
+  width: 105px;
+  height: 95px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+form fieldset {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  justify-items: center;
+  border: 2px solid rgb(175, 13, 13);
+  background-color: rgb(109, 109, 109);
+  border-radius: 70px;
+}
+form fieldset legend {
+  display: contents;
+  font-size: 40px;
+}
+form fieldset p {
+  width: 400px;
+  font-size: 20px;
+}
+form fieldset #submit {
+  margin-left: 300px;
+  margin-top: 33px;
+  font-size: 32px;
+}
+form fieldset textarea {
+  width: 400px;
+}
+
+@media screen and (max-width: 700px) {
+  .contacto__container .contacto__title {
+    font-size: 35px;
+  }
+  .contacto__container img {
+    width: 105px;
+    height: 95px;
+  }
+
+  form fieldset {
+    width: 350px;
+  }
+  form fieldset p {
+    width: 320px;
+  }
+  form fieldset textarea {
+    width: 320px;
+  }
+  form fieldset #submit {
+    margin-left: 225px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer .footer__container {
+  display: flex;
+  padding: 30px;
+  width: 90%;
+  margin-top: 100px;
+  flex-direction: column-reverse;
+}
+footer .footer__container .footer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 95%;
+  align-self: center;
+}
+footer .footer__container .footer__text .footer__caja1 h3 {
+  text-align: center;
+}
+footer .footer__container .footer__text .footer__caja1 p {
+  width: 90%;
+  text-align: justify;
+  margin: auto;
+}
+footer .footer__container .footer__text .footer__caja2 {
+  justify-content: center;
+}
+footer .footer__container .footer__text .footer__caja2 h3 {
+  text-align: center;
+}
+footer .footer__container .footer__text .footer__caja2 p {
+  width: 95%;
+  text-align: center;
+  margin: auto;
+}
+footer .footer__container .footer__text .footer__caja3 {
+  margin-top: 20px;
+  text-align: center;
+  width: 95%;
+}
+footer .footer__container .footer__text .footer__caja3 .footer__icon {
+  width: 50px;
+  height: 50px;
+}
+footer .footer__container .footer__ubi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer__container .footer__ubi .footer__map {
+  width: 95%;
+  height: 400px;
+}
+
+.anim__logo:hover {
+  transform: rotateY(180deg);
+}
+
+/*# sourceMappingURL=style.css.map */
