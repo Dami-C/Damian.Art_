@@ -8,6 +8,12 @@ body {
   background: linear-gradient(rgb(255, 255, 255), rgb(114, 114, 114));
 }
 
+@media screen and (max-width: 619px) {
+  .container__logo {
+    width: 100px;
+    margin-left: 10px;
+  }
+}
 .home__title {
   margin-top: 100px;
   margin-left: 50px;
@@ -51,7 +57,6 @@ body {
   .carousel-item {
     margin-top: 70px;
   }
-
   .home__container .home__img1 {
     width: 320px;
     height: 320px;
@@ -177,7 +182,6 @@ body {
   .cuidados__subtitle {
     width: 308px;
   }
-
   .listacuidados__container .listacuidados__items {
     width: 60%;
   }
@@ -243,7 +247,6 @@ form fieldset textarea {
     width: 105px;
     height: 95px;
   }
-
   form fieldset {
     width: 350px;
   }
