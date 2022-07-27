@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(255, 255, 255), rgb(114, 114, 114));
+
+}
+
+@mixin cajahome {
+    display: flex;
+        margin: auto;
+        margin-top: 150px;
+        justify-content: space-around;
+        height: 500px;
+        border-bottom: 2px solid #FF0000;
+        padding: 15px;
+        width: 80%; 
+}
+
+@media screen and ( max-width : 619px ) {
+    .container__logo {
+        width: 100px;
+        margin-left: 10px;
+    }
+}
+
+@import './components/home';
+@import './components/trabajos';
+@import './components/estudio';
+@import './components/cuidados';
+@import './components/contacto';
+@import './components/footer';
+@import './components/animaciones';
+

@@ -1,0 +1,93 @@
+.contacto__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    
+
+    .contacto__title {
+        font-size: 50px;
+    }
+
+    img {
+        margin-top: -20px;
+        width: 105px;
+        height: 95px;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+
+
+    fieldset {
+    margin-top: 150px;
+    margin-bottom: 150px;  
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-items: center;
+    border: 2px solid rgb(175, 13, 13);
+    background-color: rgb(109, 109, 109);
+    border-radius: 70px;
+
+    legend {
+        display: contents;
+        font-size: 40px;
+    }
+
+    p {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #submit {
+        margin-left: 300px;
+        margin-top: 33px;
+        font-size: 32px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+
+}
+}
+
+@media screen and ( max-width : 700px ) {
+
+    .contacto__container {
+
+        .contacto__title {
+            font-size: 35px;
+        }
+
+        img {
+            width: 105px;
+            height: 95px;
+        }
+    }
+
+
+    form {
+        fieldset {
+            width: 350px;
+
+            p {
+                width: 320px;
+            }
+
+            textarea {
+                width: 320px;
+            }
+
+            #submit {
+                margin-left: 225px;
+            }
+
+
+        }
+    }
+}

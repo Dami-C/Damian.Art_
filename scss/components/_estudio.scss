@@ -1,0 +1,27 @@
+.estudio__title {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.estudio__caja{
+    margin-top: 50px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .estudio__img {
+        filter: grayscale(100%);
+        border-radius: 50px;
+        width: 700px;
+        height: 500px;
+        object-fit: contain;
+        margin: 50px 20px 20px 50px;
+    }
+}
+
+.gifluffy {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}

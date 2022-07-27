@@ -1,0 +1,84 @@
+.cuidados__main {
+    display: flex;
+    flex-direction: column;
+
+        .cuidados__title {
+            margin-top: 100px;
+            margin-left: 50px;
+            }
+    }
+    
+    .cuidados__subtitle {
+        margin-top: 50px;
+        align-self: center;
+
+        
+    }
+    
+    .listacuidados__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        .listacuidados__ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+    
+        .listacuidados__items {
+            display: block;
+            margin: 50px;
+            width: 30%;
+            text-align: center;
+            align-items: center;
+        }
+    
+        img {
+            width: 70px;
+            height: 70px;
+            box-shadow: 2px 2px 7px #000000;
+            border-radius: 22px;
+            margin: 10px;
+        }
+    
+        h3 {
+            color: rgb(175, 13, 13);
+            font-size: 25px;
+            border-bottom: 2px solid black;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    
+        p {
+            color: #000000;
+            text-align: justify;
+            font-weight: bold;
+        }
+    
+    }
+
+    @media screen and ( max-width : 600px ) {
+        .cuidados__subtitle {
+            width: 308px;
+        }
+
+        .listacuidados__container {
+
+            .listacuidados__items {
+                width: 60%;
+            }
+
+        }
+    }
+
+    @media screen and ( max-width : 406px ) {
+
+        .cuidados__subtitle {
+            width: 200px;
+        }
+
+    }

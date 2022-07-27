@@ -1,0 +1,65 @@
+.home__title {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.home__container {
+        @include cajahome;
+    
+    
+        p {
+            text-align: justify;
+            width: 400px;
+        }
+    
+        .home__img1 {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    
+    .home__img2 {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+
+    @media screen and ( max-width : 992px ) {
+        .home__container {
+            height: 810px;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+    }
+
+    @media screen and ( max-width : 500px ) {
+        .carousel-item {
+            margin-top: 70px;
+        }
+
+        .home__container {
+            .home__img1 {
+                width: 320px;
+                height: 320px;
+            }
+    
+            .home__img2 {
+                width: 320px;
+                height: 320px;
+            }
+    
+            p {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 320px;
+            }
+        }
+    }
+    
+
+
+
