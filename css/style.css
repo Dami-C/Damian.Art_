@@ -230,7 +230,7 @@ form fieldset p {
   width: 400px;
   font-size: 20px;
 }
-form fieldset #submit {
+form fieldset .button__enviar {
   margin-left: 300px;
   margin-top: 33px;
   font-size: 32px;
@@ -254,10 +254,65 @@ form fieldset textarea {
     width: 320px;
   }
   form fieldset textarea {
-    width: 320px;
+    width: 31vh;
   }
-  form fieldset #submit {
+  form fieldset .button__enviar {
     margin-left: 225px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacto__container .contacto__title {
+    font-size: 7vw;
+  }
+  form fieldset {
+    width: 80vw;
+  }
+  form fieldset legend {
+    font-size: 7vw;
+  }
+  form fieldset .contacto__text {
+    font-size: 4vw;
+    width: 55vw;
+  }
+  form fieldset p {
+    width: 90%;
+  }
+  form fieldset p .contacto__text1 {
+    font-size: 4vw;
+  }
+  form fieldset p input {
+    width: 90%;
+  }
+  form fieldset .button__enviar {
+    width: 26vh;
+    margin-left: 20vw;
+    padding-right: 16vw;
+  }
+  form fieldset .button__enviar input {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contacto__container .contacto__title {
+    font-size: 7vw;
+  }
+  form fieldset legend {
+    font-size: 7vw;
+  }
+  form fieldset .contacto__text {
+    font-size: 4vw;
+    width: 55vw;
+  }
+  form fieldset p .contacto__text1 {
+    font-size: 4vw;
+  }
+  form fieldset textarea {
+    width: 29vh;
+  }
+  form fieldset .button__enviar {
+    width: 10vh;
+    margin-left: 0%;
+    padding-right: 23vw;
   }
 }
 footer {
